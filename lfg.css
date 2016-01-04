@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 2000px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.align-right {
+    text-align: right;
+}
+/* Avatar stuff */
+.profile-avatar {
+    background-color: #f1f1f1;
+}
+.avatar {
+    min-height: 200px;
+    width: 100%;
+    background-color: #ddd;
+}
+.avatar, .avatar:hover, .avatar:visited, .avatar:focus, .avatar:link {
+    outline: 0px !important;
+}
+
+/* Profile page */
+.profile-top {
+    height: 100%;
+    position: relative;
+}
+.profile-area {
+    padding-bottom: 15px;
+}
+.display-profile {
+    width: 100%;
+}
+.top-mar {
+    margin-top: 25px;
+}
+.edit-profile {
+    position: absolute;
+    top: 4px;
+    left: -15px;
+}
+@media (max-width: 768px) {
+    .edit-profile {
+        top: -36px;
+    }
+}
+.edit-profile a {
+    padding: 5px;
+    color: #fff;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(125,125,125,0.8);
+    transition: 0.2s ease;
+}
+.edit-profile a:hover {
+    text-decoration: none;
+    background-color: rgba(100,100,100,0.8);
+}
+.drop {
+    margin: 0px;
+    padding: 0px;
+}
+.profile-info {
+    max-height: 100%;
+    overflow-x: auto;
+}
+.the-profile {
+    margin-top: 40px;
+}
+.form-control {
+    max-width: 100%;
+}
+.content {
+    margin-top: 25px;
+}
+@media (min-width: 768px) {
+    .modal-dialog {
+        margin: 100px auto !important;
+    }
+}
+
+/* Homepage */
+.forum-add-button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 500;
+}
+@media (max-width: 768px) {
+    .forum-add-button {
+        bottom: 25px;
+        right: 25px;
+    }
+}
+.circle-btn {
+    border-radius: 50%;
+    background-color: #d32f2f;
+    border: 0px;
+    padding: 15px 20px 13px 20px;
+    color: #fff;
+    box-shadow: 0px 1px 5px #555;
+    transition: .2s ease;
+    outline: none !important;
+    z-index: 500;
+}
+.circle-btn:hover {
+    background-color: #e53935;
+}
+#mark {
+    min-height: 150px;
+}
+.forum-add {
+    position: fixed;
+    bottom: 0px;
+    display: none;
+    background-color: #eee;
+    padding: 20px 0px;
+    width: 100%;
+    z-index: 100;
+}
+.marg-top {
+    margin-top: 40px;
+}
+.avatar-small {
+    height: 40px;
+    width: auto;
+}
+.circle {
+    border-radius: 50%;
+}
+.navbar-default {
+    background-color: #1c3144;
+}

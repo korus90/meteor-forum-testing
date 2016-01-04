@@ -1,0 +1,43 @@
+<template name="register">
+    {{> header}}
+    <div class="container">
+        <h1>Register</h1>
+        <form>
+            <div class="form-group">
+                <input type="text" name="registerUsername" class="form-control" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="text" name="registerEmail" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="password" name="registerPassword" class="form-control" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <textarea name="registerBio" class="form-control" placeholder="Bio"></textarea>
+            </div>
+            <button class="btn btn-default" type="submit">Submit</button>
+        </form>
+    </div>
+</template>
+
+
+<template name="login">
+    {{> header}}
+    <div class="container">
+        <h1>Login</h1>
+        <form>
+            <div class="form-group">
+                <input type="text" name="loginUsername" class="form-control" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="password" name="loginPassword" class="form-control" placeholder="Password">
+            </div>
+            <button class="btn btn-default" type="submit">Submit</button>
+        </form>
+    </div>
+</template>
+
+
+<template name="logout">
+    <li><a href="#" class="logout"><i class="fa fa-sign-out"></i> Logout</a></li>
+</template>

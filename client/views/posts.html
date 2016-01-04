@@ -1,0 +1,32 @@
+<template name="posts">
+    <div class="container">
+        <div class="list-group">
+        {{#each posts}}
+            <a href="{{pathFor route='post'}}" class="list-group-item">
+                {{title}}
+            </a>
+        {{/each}}
+        </div>
+        <div class="forum-add-button">
+            <button class="circle-btn" id="forum-up"><i class="fa fa-plus"></i></button>
+        </div>
+    </div>
+    <div class="container-fluid forum-add">
+        <div class="container">
+            <div class="row">
+                <form class="add-post">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="forumTitle">Title</label>
+                            <input type="text" class="form-control" id="forum-title" placeholder="Forum Title" name="forumTitle" />
+                        </div>
+                        <div class="form-group">
+                            <textarea class="mark-d form-control" id="mark" placeholder="You can use markdown here (eg. **Bold**)"></textarea>
+                        </div>
+                        <button class="btn btn-default" type="submit">Create Post</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</template>

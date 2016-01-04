@@ -1,0 +1,39 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+autopublish
+insecure
+cfs:standard-packages
+accounts-password
+iron:router
+meteorhacks:fast-render
+aldeed:collection2
+twbs:bootstrap
+fortawesome:fontawesome
+aldeed:autoform
+summernote:summernote
+cfs:gridfs
+cfs:filesystem
+raix:ui-dropped-event
+sacha:spin
+chrismbeckett:toastr
+themeteorchef:commonmark
+cfs:graphicsmagick
+themeteorchef:jquery-validation
+standard-minifiers
+meteor-base
+mobile-experience
+mongo
+blaze-html-templates
+session
+jquery
+tracker
+logging
+reload
+random
+ejson
+spacebars
+check

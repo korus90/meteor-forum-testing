@@ -1,0 +1,57 @@
+<template name="editProfile">
+    {{> header}}
+    <div class="container">
+        <div class="col-md-12 profile-top">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12 profile-avatar">
+                    <div class="row">
+                        {{#with avatarImage}}
+                                <img class="avatar" src="{{this.url}}" />
+                        {{/with}}
+                    </div>
+                        <div class="profile-area col-md-12">
+                            <div class="edit-profile">
+                                <a href="" class="edit"><i class="fa fa-pencil"></i> Edit Profile</a>
+                            </div>
+                            <div class="the-profile">
+                                <h1>{{currentUser.username}}</h1>
+                                <h3 class="top-mar">Email</h3>
+                                <p>{{showEmail}}</p>
+                                <h3 class="top-mar">Bio </h3>
+                                {{{showBio}}}
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <div class="profile-edit">
+                        <div class="page-header text-center">
+                            <h1>Edit Profile</h1>
+                        </div>
+                        <h4 class="text-center marg-top">Upload Avatar</h4>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                {{> dropzone}}
+                            </div>
+                        </div>
+                        <form class="bio-edit marg-top">
+                            <h4 class="text-center">Bio</h4>
+                            <textarea class="bioEdit form-control" placeholder="You can use markdown here (eg. **Bold**)"></textarea><br>
+                                <div class="align-right">
+                                    <button class="btn btn-default" type="submit">Submit</button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 content">
+        </div>
+    </div>
+</template>
+
+<!-- Dropzone! -->
+<template name="dropzone">
+    <div class="fileinput fileinput-new avatarUpload" data-provides="fileinput">
+        <input type="file" />
+    </div>
+</template>
